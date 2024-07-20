@@ -1,0 +1,23 @@
+POST http://localhost:18081/books/add_book
+Content-Type: application/json
+
+{
+  "title": "test title",
+  "author": "testman"
+}
+
+###
+DELETE http://localhost:18081/books/delete_book
+Content-Type: application/json
+
+{
+  "book_id": "01J329WBDA4DV4M1M8TZ5BV13G"
+}
+
+###
+GET http://localhost:18081/books/list
+Accept: application/json
+
+###
+GET http://localhost:18081/books/list?title_filter=我が名は猫
+Accept: application/json
